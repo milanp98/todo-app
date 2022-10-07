@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
+.complete{
+  text-decoration: line-through;
+  font-style: oblique;
+  opacity: 50%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  background-color: #242716;
+  background-image: url("fat-safari.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100vw;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.todo-app {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  width: 540px;
+  min-height: 75vh;
+  background: #46201655;
+  backdrop-filter: blur(55px);
+  text-align: center;
+  margin: 128px auto;
+  border-radius: 30px;
+  padding-bottom: 32px;
+}
+
+h1 {
+  margin: 16px 0;
+  color: rgb(250, 224, 220);
+  font-size: 24px;
+}
+
+.todo-input {
+  padding: 10px;
+  border-radius: 10px 0px 0px 10px;
+  border: 2px solid #462016;
+  outline: none;
+  width: 70%;
+  background: #46201655;
+  color: rgb(250, 224, 220);
+}
+
+.todo-input::placeholder {
+  color: rgb(238, 207, 201);
+}
+
+.todo-button {
+  padding: 10px;
+  border-radius: 0px 10px 10px 0px;
+  border: 2px solid #462016;
+  outline: none;
+  width: 20%;
+  background: #462016;
+  color: rgb(250, 224, 220);
+  
+  color: #fff;
+}
+
+.todo-row {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 4px auto;
+  color: rgb(250, 224, 220);
+  background-color: #46201650;
+
+  padding: 16px;
+  border-radius: 5px;
+  width: 90%;
 }
 
-.App-link {
-  color: #61dafb;
+.todo-form {
+  margin-bottom: 32px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.icons {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.delete-icon {
+  margin-right: 5px;
+  color: #462016;
+}
+
+.edit-icon {
+  color: #462016;
 }
